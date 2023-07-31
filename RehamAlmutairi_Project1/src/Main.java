@@ -203,7 +203,7 @@ public class Main {
     }
 
     public static void checkOutOfRange(int place) throws Exception{
-        if(place > 9){
+        if(!(place > 0 && place < 10)){
             throw new Exception("Sorry, the number out of range. You must enter number from 1-9");
         }
     }
